@@ -31,11 +31,11 @@ choices.forEach((choice) =>{
         }else if((userchoice=='rock' && compchoice=='paper') || (userchoice=='paper' && compchoice=='scissor') || (userchoice=='scissor' && compchoice=='rock')){
             compscore++
             cs.innerText = compscore   
-            msg.innerText = 'Comp Wins'
+            msg.innerText = `Computer wins,Computer selected ${compchoice}`
         }else if((compchoice=='rock' && userchoice=='paper') || (compchoice=='paper' && userchoice=='scissor') || (compchoice=='scissor' && userchoice=='rock')){
             userscore++
             us.innerText = userscore
-            msg.innerText = 'You Win'
+            msg.innerText = `You win,Computer selected ${compchoice}`
         }
     })
 })
@@ -43,8 +43,10 @@ choices.forEach((choice) =>{
 newbtn.addEventListener('click',()=>{
     let us = document.querySelector('#uscore')
     let cs = document.querySelector('#cscore')
+    let msg = document.querySelector('#msg')
     userscore = 0
     compscore = 0
     us.innerText = userscore
     cs.innerText = compscore
+    msg.innerText = 'Play Your Move'
 })
