@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="SPS.css">
+</head>
+<body>
+    <nav><h1 class="center">Rock Paper Scissors</h1></nav>
+
+    <div class="choices">
+
+        <div class="choice" id="rock">
+            <img src="images/Rock.jpeg" alt="Rock image">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/Paper.jpeg" alt="Paper image">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="images/Scissor.jpeg" alt="Scissor image">
+        </div>
+        
+    </div>
+
+    <div class="scores">
+        <div class="score">
+           <p id="uscore"></p>
+           <p>You</p> 
+        </div>
+        <div class="score">
+            <p id="cscore"></p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <div class="msg"> 
+        <p id="msg">Play Your Move</p>
+    </div>
+
+    <div class="new">
+        <button id="new">Restart</button>
+    </div>
+
+    <script src="SPS.js"></script>
+</body>
+</html>
